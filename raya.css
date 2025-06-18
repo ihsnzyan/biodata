@@ -54,13 +54,16 @@ section {
 }
 
 .card,
-.boks1 {
+.boks1, .boks2 {
   display: flex;
   max-width: 900px;
   height: 400px;
   margin: 40px auto;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carti {
+  display: flex;
 }
 
 /* ========== FOTO & TEKS ========== */
@@ -100,7 +103,7 @@ h2 {
 /* ========== MEDIA QUERIES ========== */
 @media (max-width: 900px) {
   .card,
-  .boks1 {
+  .boks1, .boks2 {
     max-width: 450px;
     height: 200px;
   }
@@ -151,7 +154,7 @@ h2 {
   }
 
   .card,
-  .boks1 {
+  .boks1, .boks2 {
     max-width: 360px;
     height: 160px;
   }
