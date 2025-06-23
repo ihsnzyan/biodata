@@ -53,16 +53,39 @@ section {
   top: -140px;
 }
 
+.card:hover, .boksit:hover {
+  border-radius: 100px;
+  scale: 1.05;
+}
+
 .card,
-.boks1, .boks2 {
+.boksit {
+  overflow: hidden;
   display: flex;
   max-width: 900px;
   height: 400px;
   margin: 40px auto;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.6s ease;
 }
-.carti {
+
+.card.show, .boksit.show{
+  opacity: 1;
+  transform: translateX(0);
+  
+}
+
+.deskripsi{
+  margin: 50px;
+}
+
+
+
+.musik, .film {
   display: flex;
 }
 
@@ -70,6 +93,7 @@ section {
 .foto {
   height: 100%;
   display: flex;
+
 }
 
 .kanan {
@@ -82,7 +106,7 @@ h2 {
   font-size: 50px;
 }
 
-.inf {
+.inf, .deskripsi {
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -103,9 +127,10 @@ h2 {
 /* ========== MEDIA QUERIES ========== */
 @media (max-width: 900px) {
   .card,
-  .boks1, .boks2 {
+  .boksit{
     max-width: 450px;
     height: 200px;
+
   }
 
   h2 {
@@ -122,9 +147,10 @@ h2 {
     margin-bottom: 0;
   }
 
-  .inf {
+  .inf, .deskripsi {
     margin-bottom: 0;
     font-size: 10px;
+    text-align: justify;
   }
 
   header {
@@ -154,7 +180,7 @@ h2 {
   }
 
   .card,
-  .boks1, .boks2 {
+  .boksit {
     max-width: 360px;
     height: 160px;
   }

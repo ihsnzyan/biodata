@@ -15,10 +15,10 @@
     <p>Movie Enthusiast</p>
   </div>
   <div class="header-left">
-<a href="https://www.instagram.com/ihsnz_yan?igsh=MWtrenRtbDR2bXNiYQ==" target="_blank"> <img src="instagram.png" alt="Instagram"></a>
-        <a href="https://www.tiktok.com/@ihsnz_yan?_t=ZS-8vzwYNFj7aM&_r=1" target="_blank"> <img src="tiktok.png" alt="Tiktok"></a>
-          <a href="https://www.facebook.com/share/1HgCufMezm/" target="_blank"> <img src="facebook.png" alt="Facebook"></a>
-        <a href="https://x.com/ihsnz_yan?t=RIm5MIWzc1n9Yeh75rHBJQ&s=09" target="_blank"> <img src="twitter.png" alt="twitter"></a>
+<a href="https://www.instagram.com/ihsnz_yan?igsh=MWtrenRtbDR2bXNiYQ==" target="_blank"> <img src="image/instagram.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@ihsnz_yan?_t=ZS-8vzwYNFj7aM&_r=1" target="_blank"> <img src="image/tiktok.png" alt="Tiktok"></a>
+          <a href="https://www.facebook.com/share/1HgCufMezm/" target="_blank"> <img src="image/facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/ihsnz_yan?t=RIm5MIWzc1n9Yeh75rHBJQ&s=09" target="_blank"> <img src="image/twitter.png" alt="twitter"></a>
       </div>
 </header>
 
@@ -41,14 +41,43 @@
   </div>
 </section>
 
+<section class="deskripsi">
+  <h2>About me</h2>
+  <p class="desk">
+      Ihsan Septiano — Web Developer dan penggemar film.  
+      Fokus pada efisiensi dan presisi dalam pengembangan aplikasi dan produksi konten multimedia.  
+      Situs ini menampilkan karya serta referensi musik dan film yang relevan.
+  </p>
+  <p class="desk">
+    Pendekatan saya profesional dan tanpa basa-basi.  
+    Di sini, Anda menemukan esensi dari apa yang saya lakukan.
+  </p>
+</section>
+
 <section class="lainnya">
   <div class="boks">
-    <div class="boks1">
-      <a href="https://open.spotify.com/user/31p4igkn7dx5btemjxzd3f2wnp54?si=4f69bd9c3a9e47ad" target="_blank" class="carti"><img src="image/musik.jpg" alt="image unloaded"></a>
+    <div class="boksit">
+      <a href="https://open.spotify.com/user/31p4igkn7dx5btemjxzd3f2wnp54?si=4f69bd9c3a9e47ad" target="_blank" class="musik"><img src="image/musik.jpg" alt="image unloaded"></a>
     </div>
-    <div class="boks2"></div>
+    <div class="boksit">
+      <a href="https://boxd.it/4wahR" target="_blank" class="film"><img src="image/film.jpg" alt="image unloaded"></a>
+    </div>
+    </div>
   </div>
 </section>
 
 </body>
 </html>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show'); // masuk layar → animasi in
+      } else {
+        entry.target.classList.remove('show'); // keluar layar → animasi out
+      }
+    });
+  });
+
+  document.querySelectorAll('.card, .boksit').forEach(el => observer.observe(el));
+</script>
