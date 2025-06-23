@@ -106,9 +106,10 @@ h2 {
   font-size: 50px;
 }
 
-.inf, .deskripsi {
+.inf, .desk {
   margin-bottom: 15px;
   font-size: 20px;
+    text-align: justify;
 }
 
 /* ========== INFO GRID ========== */
@@ -134,7 +135,7 @@ h2 {
   }
 
   .card:hover, .boksit:hover {
-  border-radius: 30px;
+  border-radius: 30px;}
 
   h2 {
     font-size: 25px;
@@ -150,7 +151,7 @@ h2 {
     margin-bottom: 0;
   }
 
-  .inf, .deskripsi {
+  .inf, .desk {
     margin-bottom: 0;
     font-size: 10px;
     text-align: justify;
