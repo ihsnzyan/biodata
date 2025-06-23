@@ -133,6 +133,9 @@ h2 {
 
   }
 
+  .card:hover, .boksit:hover {
+  border-radius: 30px;
+
   h2 {
     font-size: 25px;
   }
