@@ -48,5 +48,5 @@ section {
 
 @keyframes move {
     from { top: 0px; }
-    to { top: 100px; }
+    to { top: 10vh; }
 }
