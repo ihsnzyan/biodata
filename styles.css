@@ -38,9 +38,15 @@ section {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    z-index: -1;
 }
 
 #break  {
     height: 2vw;
     background: linear-gradient(to bottom, black, #161616);
+}
+
+@keyframes move {
+    from { top: 0px; }
+    to { top: 100px; }
 }
