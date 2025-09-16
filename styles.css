@@ -26,6 +26,12 @@ section {
     z-index: 0
 }
 
+#perso {
+    display: flex;
+  gap: 10px;
+  animation: slide 15s linear infinite;
+}
+
 #utama {
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -48,15 +54,15 @@ section {
 
 #personal {
     display: flex;
-    gap: 10px;
-    width: 90%;
-    overflow: hidden;
+  gap: 10px;
+  width: 90%;
+  overflow: hidden;
 }
 
 .personal {
     min-width: 200px;
     height: 120px;
-    background: lightblue;
+    background: white;
     border-radius: 10px;
     flex-shrink: 0;
     display: flex;
