@@ -46,7 +46,30 @@ section {
     background: linear-gradient(to bottom, black, #161616);
 }
 
+#personal {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    overflow: hidden;
+}
+
+.personal {
+    min-width: 200px;
+    height: 120px;
+    background: lightblue;
+    border-radius: 10px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes move {
     from { top: 0px; }
     to { top: 10vh; }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
 }
