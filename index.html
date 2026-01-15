@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanzekai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    * {color: #F8FAFC;}
+    .truncate-text {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%; 
+    }
+    .link-hover:hover {
+        color: #0062ec;
+        text-decoration: underline;
+    }
+</style>
+
+
+
+<body class="bg-[#020617] flex justify-center items-center min-h-screen p-5">
+    
+    <div class="flex flex-col md:flex-row w-full max-w-5xl gap-6">
+        
+        <section class="bg-[#1E293B] p-10 w-full h-fit md:w-1/3 border-2 border-[#334155] shadow-2xl flex flex-col gap-6 rounded-xl items-center justify-center">
+            <img src="assets/img/tian.webp" alt="profile" class="h-32 w-32 object-cover rounded-full border-2 border-[#334155]">
+            <h1 class="text-[#F8FAFC] font-bold text-center text-xl">Ihsan Septiano</h1>
+            <p class="text-[#F8FAFC] bg-gray-500 rounded pl-2 pr-2">Learner</p>
+            <div class="flex-col flex gap-3 md:gap-0">
+                <a class="link-hover" href="mailto:tiancraft51@gmail.com" class="truncate-text">> tiancraft51@gmail.com</a>
+                <a class="link-hover" href="https://www.instagram.com/ihsnz_yan/" >> instagram @ihsnz_yan</a>
+            </div>
+        </section>
+
+        <section id="konten-1" class="gap-3 p-10 w-full h-fit  md:flex-1 rounded-xl border-2 border-[#334155] shadow-2xl flex-col flex  justify-center">
+            <div>
+                <h2 class="text-2xl font-bold p-2">About</h2>
+                <p class="indent-8 text-justify">Saya adalah Mohammad Ihsan Septiano Firdaus, seorang pelajar yang memiliki ketertarikan pada bidang teknologi informasi, perfilman, dan musik rap. Saya aktif memanfaatkan teknologi digital sebagai sarana belajar sekaligus berekspresi secara kreatif. Dengan minat yang kuat terhadap pengembangan diri, saya terus berupaya memperluas wawasan dan meningkatkan kemampuan di berbagai bidang yang saya tekuni.</p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold p-2">Things I Do</h2>
+                
+            </div>
+
+        </section>
+
+    </div>
+</body>
+</html>
