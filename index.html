@@ -20,6 +20,11 @@
         color: #0062ec;
         text-decoration: underline;
     }
+
+    .boks {
+        display: flex;
+        gap: 10px;
+    }
 </style>
 
 
@@ -38,14 +43,26 @@
             </div>
         </section>
 
-        <section id="konten-1" class="gap-3 p-10 w-full h-fit  md:flex-1 rounded-xl border-2 border-[#334155] shadow-2xl flex-col flex  justify-center">
+        <section id="konten-1" class="gap-6 p-10 w-full h-fit  md:flex-1 rounded-xl border-2 border-[#334155] shadow-2xl flex-col flex  justify-center">
             <div>
                 <h2 class="text-2xl font-bold p-2">About</h2>
                 <p class="indent-8 text-justify">Saya adalah Mohammad Ihsan Septiano Firdaus, seorang pelajar yang memiliki ketertarikan pada bidang teknologi informasi, perfilman, dan musik rap. Saya aktif memanfaatkan teknologi digital sebagai sarana belajar sekaligus berekspresi secara kreatif. Dengan minat yang kuat terhadap pengembangan diri, saya terus berupaya memperluas wawasan dan meningkatkan kemampuan di berbagai bidang yang saya tekuni.</p>
             </div>
-            <div>
+            <div class="gap-2 flex flex-col" >
                 <h2 class="text-2xl font-bold p-2">Things I Do</h2>
-                
+                <div class="boks">
+                    <img src="assets/img/webdev.png" alt="" class="w-6 brightness-0 invert">
+                    <P>Web Development</P>
+                </div>
+                <div class="boks">
+                    <img src="assets/img/scriptwriter.png" alt="" class="w-6 brightness-0 invert">
+                    <p>Scriptwriting</p>
+                </div>
+                <div class="boks">
+                    <img src="assets/img/kamera.png" class="w-6 brightness-0 invert" alt="">
+                    <p>Content Creator</p>
+                </div>
+                <div class="boks"></div>
             </div>
 
         </section>
