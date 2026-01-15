@@ -16,6 +16,6 @@ git commit -m "$message"
 echo "⬆️ Memulai push ke branch main..."
 # Kita paksa buat branch main dan push
 git branch -M main
-git push -u origin main
+git push -u origin main --force
 
 echo "✅ Selesai! Cek di: https://github.com/ihsnzyan/sanzekai"
